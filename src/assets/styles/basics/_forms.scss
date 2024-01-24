@@ -1,0 +1,12 @@
+button {
+  border: 0;
+  background-color: $emerald_green;
+  color: whitesmoke;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+  box-shadow: none !important;
+  &:hover {
+    box-shadow: none !important;
+  }
+}

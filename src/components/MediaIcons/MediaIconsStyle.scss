@@ -1,0 +1,11 @@
+@import "../../assets/styles/setup/setup";
+
+.media__icons__continuer {
+  & > * {
+    cursor: pointer;
+    transition: 0.4s;
+    &:hover {
+      color: $emerald_green;
+    }
+  }
+}

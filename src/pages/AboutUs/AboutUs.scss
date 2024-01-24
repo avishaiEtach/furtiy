@@ -1,0 +1,301 @@
+@import "../../assets/styles/setup/setup";
+
+//-----------------------------------AboutUs--------------------------
+
+.about-us {
+  gap: 80px;
+}
+
+// ---------------------------------AboutUsIntro---------------------------
+
+.about-us-intro {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  height: 400px;
+  & > * {
+    width: 50% !important;
+  }
+}
+
+.about-us-intro-carousel-container {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.about-us-intro-carousel {
+  height: 100%;
+  border-radius: 10px !important;
+  .react-multi-carousel-track {
+    height: 100%;
+    border-radius: 10px !important;
+  }
+  .react-multi-carousel-dot-list {
+    margin-bottom: 20px;
+  }
+  .react-multi-carousel-dot {
+    button {
+      background-color: transparent;
+      border-color: $shadowy_charcoal;
+    }
+  }
+  .react-multi-carousel-dot--active {
+    button {
+      background-color: $white;
+      border-color: $white;
+    }
+  }
+}
+
+.about-us-intro-carousel-card-container {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.about-us-intro-carousel-card-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.about-us-intro-paragraph-container {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.about-us-intro-paragraph-header {
+  font-size: rem(28px);
+  .bold-text {
+    color: $emerald_green;
+  }
+}
+
+.about-us-intro-paragraph-item {
+  line-height: 1.8;
+  .bold-text {
+    color: $emerald_green;
+    font-weight: 700;
+    margin-left: 8px;
+  }
+}
+
+// --------------------------------------WhatWeProvide-------------------------------
+
+.about-us-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+  row-gap: 80px;
+}
+
+.about-us-provide-card {
+  padding: 20px;
+  padding-top: 50px;
+  text-align: center;
+  position: relative;
+  border: 1px solid $light_charcoal;
+  transition: 0.4s;
+  h4 {
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: rem(14px);
+    line-height: 1.4;
+  }
+  &:hover {
+    box-shadow: -3px 9px 43px -8px $light_charcoal;
+    -webkit-box-shadow: -3px 9px 43px -8px $light_charcoal;
+    -moz-box-shadow: -3px 9px 43px -8px $light_charcoal;
+    .about-us-provide-card-icon {
+      box-shadow: -3px 9px 43px -8px $light_charcoal;
+      -webkit-box-shadow: -3px 9px 43px -8px $light_charcoal;
+      -moz-box-shadow: -3px 9px 43px -8px $light_charcoal;
+    }
+  }
+}
+
+.about-us-provide-card-icon {
+  border: 1px solid $light_charcoal;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-175%) translateX(-50%);
+  z-index: 5;
+  background-color: $white;
+  transition: 0.4s;
+}
+
+.about-us-provide-card-image {
+  width: 50px;
+  height: 50px;
+  display: block;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.about-us-provide-header {
+  font-size: 28px;
+  align-self: center;
+  margin-bottom: 80px;
+  .bold-text {
+    color: $emerald_green;
+  }
+}
+
+//--------------------------------------AboutUsInfo----------------------------
+
+.about-us-info {
+  background-image: url(../../assets/images/heroCover2.jpg) !important;
+  position: relative;
+  padding: 70px 100px !important;
+  &::before {
+    content: "";
+    background-color: $white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+  }
+}
+
+.about-us-info-content {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  & > * {
+    flex-basis: 25%;
+  }
+}
+
+.about-us-info-content-card {
+  padding: 5px;
+  width: 100%;
+  &:not(:last-of-type) {
+    border-right: 3px solid $light_charcoal;
+  }
+  .count-up,
+  span:first-of-type {
+    font-size: rem(42px) !important;
+    font-weight: 700 !important;
+    color: black !important;
+  }
+  span:last-child {
+    font-size: rem(14px);
+    font-weight: 700;
+    color: $emerald_green;
+  }
+}
+
+// -------------------------------------AboutUsOurTeam--------------------
+
+.about-us-our-team {
+  margin-bottom: 90px;
+  & > * {
+    flex-basis: 50%;
+  }
+  .daily-best-sells-carousel-arrows {
+    justify-content: flex-end;
+    margin-bottom: 50px;
+  }
+
+  .rec-item-wrapper {
+    border-radius: 10px;
+    position: relative;
+  }
+}
+
+.about-us-our-team-header {
+  font-size: 28px;
+  margin-bottom: 50px;
+  display: flex;
+  gap: 8px;
+  .bold-text {
+    color: $emerald_green;
+  }
+}
+
+.about-us-our-team-sub-header {
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.about-us-our-team-paragraph {
+  line-height: 1.5;
+}
+
+.about-us-our-team-card {
+  height: 450px;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  &:hover {
+    .about-us-our-team-card-cover {
+      transition: 0.4s;
+      opacity: 0.6;
+    }
+
+    .about-us-our-team-card-cover-text {
+      transition: 0.4s;
+      opacity: 1;
+    }
+  }
+}
+
+.about-us-our-team-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  border-radius: 10px;
+}
+
+.about-us-our-team-card-cover {
+  position: absolute;
+  background-color: $black;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border-radius: 10px;
+}
+
+.about-us-our-team-card-cover-text {
+  color: $white;
+  position: absolute;
+  bottom: 20%;
+  z-index: 5;
+  opacity: 0;
+  h3 {
+    margin-bottom: 0;
+  }
+  span {
+    font-size: rem(14px);
+  }
+}
+
+.about-us-our-team-card-icons {
+  font-size: 24px;
+  margin-top: 10px;
+  & > * {
+    transition: 0.4s;
+    cursor: pointer;
+    &:hover {
+      filter: opacity(0.5);
+    }
+  }
+}

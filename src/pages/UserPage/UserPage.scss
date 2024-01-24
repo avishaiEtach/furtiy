@@ -1,0 +1,192 @@
+@import "../../assets/styles/setup/setup";
+
+// -------------------UserPage-------------------------------------
+
+.user__page__tabs {
+  .react-tabs__tab-list {
+    border-bottom: none !important;
+  }
+  .react-tabs__tab {
+    border: none;
+    position: relative;
+    padding-left: 0px !important;
+  }
+
+  .tab__info {
+    svg {
+      color: $emerald_oasis;
+    }
+    span {
+      margin-top: 2px;
+      font-weight: 700;
+    }
+  }
+
+  .react-tabs__tab--selected {
+    .tab__info {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $emerald_oasis;
+      }
+    }
+  }
+}
+
+//-------------------UserDetails----------------------------
+
+.user__details__main__container {
+  padding-block: 30px;
+}
+
+.user__details__sub__container {
+  gap: 80px;
+}
+
+.user__details__user__image__container {
+  width: 250px;
+  height: 250px;
+  img {
+    border-radius: 5px;
+    object-fit: contain;
+    display: block;
+    outline: 1px solid $moonstone_grey;
+  }
+}
+
+.user__details__user__name {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.user__details__user__address {
+  color: $slate_gray;
+}
+
+.user__details__user__address__container {
+  margin-top: 10px;
+}
+
+.login__button.user__details__delete__button {
+  background-color: $flame_red !important;
+}
+
+.user__details__show__details__container {
+  gap: 40px;
+  text-transform: capitalize;
+}
+
+.user__details__show__details__label {
+  width: 150px;
+}
+
+.user__details__show__details__value {
+  color: $emerald_oasis;
+  font-weight: 500;
+}
+
+.user__details__date__input__mui {
+  background-color: $white;
+  input {
+    height: 0.8em;
+  }
+  &.withBorder {
+    fieldset {
+      border: 1px solid $emerald_green !important;
+    }
+  }
+  .Mui-focused fieldset {
+    border: 2px solid $emerald_green !important;
+  }
+  .MuiInputLabel-root {
+    color: $emerald_green !important;
+  }
+}
+
+.user__details__select {
+  background-color: $white;
+  height: 2.2em;
+  &.Mui-focused fieldset {
+    border: 2px solid $emerald_green !important;
+  }
+  .MuiInputLabel-root {
+    color: $emerald_green !important;
+  }
+}
+// .user__details__menu__paper {
+//   .MuiPaper-elevation {
+//     // top: 461px !important;
+//     // top: 476px !important;
+//   }
+// }
+
+// -------------------------UserReviewProps------------------------------
+
+.user__reviews__main__table {
+  margin-block: 30px;
+}
+
+.user__reviews__paper {
+  width: 100% !important;
+  overflow: hidden !important;
+}
+
+.user__reviews__table__container {
+  max-height: 440px !important;
+  overflow-y: scroll !important;
+}
+
+.user__reviews__table {
+  min-width: 650px !important;
+}
+.user__reviews__table__body {
+  &.no__data {
+    position: relative !important;
+    height: 300px !important;
+  }
+}
+.user__reviews__no__reviews__container {
+  height: 300px;
+}
+.user__reviews__loader__container {
+  position: absolute;
+  transform: translate(50%, -50%);
+  top: 50%;
+  right: 50%;
+}
+
+.user__reviews__product__name {
+  width: 100px;
+  text-transform: capitalize;
+}
+
+.user__reviews__review__text {
+  width: 300px;
+}
+
+.text__eclipse {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.user__reviews__go__to__product__link {
+  width: 70px;
+  transition: 0.4s;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.user__reviews__table__pagination {
+  border-top: 1px solid $platinum_gray;
+  padding-top: 0px !important;
+  .MuiTablePagination-selectLabel,
+  .MuiTablePagination-displayedRows {
+    margin: 0;
+  }
+}

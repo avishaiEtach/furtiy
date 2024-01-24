@@ -1,0 +1,51 @@
+@import "../../assets/styles/setup/setup";
+
+//-----------------------------------ContactUs--------------------------
+
+.contact-us-map {
+  width: 100%;
+  margin-bottom: 90px;
+}
+
+.contact-us-info-main-container {
+  margin-top: 80px;
+  gap: 50px;
+}
+
+// --------------------------------ContactUsInfo-------------------------
+
+.contact-us-info-container {
+  width: 100%;
+}
+
+.contact-us-info-first-text-header {
+  font-size: rem(32px);
+  font-weight: 700;
+}
+
+.contact-us-info-second-text-header {
+  font-size: rem(32px);
+  line-height: 1.5;
+  color: $emerald_green;
+  font-weight: 700;
+}
+
+.contact-us-info-card-number {
+  font-size: rem(24px);
+  font-weight: 700;
+}
+
+.contact-us-info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+  grid-gap: 20px;
+}
+.contact-us-info-card-header {
+  margin: 0;
+  font-size: rem(24px);
+}
+
+.contact-us-info-card-text {
+  margin: 0;
+  font-size: rem(14px);
+}

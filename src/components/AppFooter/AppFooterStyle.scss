@@ -1,0 +1,130 @@
+@import "../../assets/styles/setup/setup";
+
+.app-footer {
+  .logo {
+    font-size: rem(28px);
+    font-weight: 700;
+    color: $black;
+    margin-block: 10px;
+  }
+  .divider {
+    height: 2px;
+    width: auto;
+    background-color: $pearl_white;
+    &.fullscreen {
+      position: absolute;
+      z-index: 10;
+      right: 0;
+      left: 0;
+    }
+    &.vertical {
+      height: auto;
+      width: 3px;
+      margin: 3px 0px;
+    }
+    &.with__space {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.footer-info-icons {
+  svg {
+    color: $emerald_green;
+  }
+}
+
+.fast-shipping {
+  margin-bottom: 90px;
+  height: 400px;
+  background-image: url(../../assets/images/heroCover2.jpg);
+  position: relative;
+  padding: 30px 20px;
+  display: flex;
+  & > * {
+    position: relative;
+    z-index: 10;
+    flex-basis: 50%;
+  }
+}
+
+.fast-shipping-opacity {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  opacity: 0.9;
+  background-color: $white;
+}
+
+.footer-item {
+  text-transform: capitalize;
+}
+
+.fast-shipping-info {
+  padding: 20px;
+}
+
+.fast-shipping-semi-title {
+  margin: 0;
+}
+
+.fast-shipping-semi-paragraph {
+  margin: 0;
+  span {
+    color: $emerald_green;
+    font-weight: 700;
+    margin-left: 8px;
+  }
+}
+.fast-shipping-button {
+  text-transform: capitalize !important;
+  border-radius: 5px !important;
+  box-shadow: none !important;
+  z-index: 5 !important;
+  position: relative !important;
+}
+
+.footer__items {
+  & > * {
+    color: $charcoal;
+    transition: 0.4s;
+    cursor: pointer;
+    &:hover {
+      color: $emerald_green;
+      text-decoration: none;
+    }
+  }
+  .active {
+    color: $emerald_green;
+  }
+  .with__space {
+    margin-bottom: 1em;
+  }
+}
+
+.footer__info__container {
+  gap: 180px;
+  margin-bottom: 40px;
+}
+
+.phone__store__button {
+  width: 150px;
+  button {
+    padding: 0 !important;
+  }
+}
+
+.copyright__text {
+  color: $emerald_green;
+  &.with__space {
+    margin-inline: 3px;
+  }
+}
+
+.fast-shipping-image {
+  height: 100%;
+  object-fit: contain;
+}

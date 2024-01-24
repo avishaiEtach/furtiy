@@ -1,0 +1,36 @@
+@import "../../assets/styles/setup/setup";
+
+.loader__container {
+  height: 10cm;
+}
+
+.full__hight {
+  height: 100% !important;
+  align-items: flex-start !important;
+}
+
+.circular__progress {
+  color: $emerald_green !important;
+}
+
+.cards {
+  margin-bottom: 90px;
+  .cards__container {
+    height: 100%;
+  }
+  .loader__card {
+    width: 210px !important;
+    height: 100% !important;
+    border-radius: 5px !important;
+  }
+}
+
+.horizontal__cards {
+  width: 100%;
+  height: 100%;
+  & > * {
+    width: 100% !important;
+    height: 170px !important;
+    border-radius: 5px !important;
+  }
+}

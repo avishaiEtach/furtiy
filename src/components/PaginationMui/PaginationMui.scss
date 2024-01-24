@@ -1,0 +1,23 @@
+@import "../../assets/styles/setup/setup";
+
+.pagination {
+  .MuiPagination-ul {
+    gap: 8px;
+  }
+  .MuiPaginationItem-previousNext {
+    background-color: $emerald_green !important;
+    color: $white;
+    border-color: transparent !important;
+  }
+  .MuiPaginationItem-page {
+    border-color: transparent !important;
+    background-color: $misty_lavender !important;
+    font-size: rem(12px) !important;
+    font-weight: 700 !important;
+    font-family: Comfortaa-Regular !important;
+    &.Mui-selected {
+      background-color: $emerald_green !important;
+      color: $white;
+    }
+  }
+}

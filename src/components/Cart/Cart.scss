@@ -1,0 +1,206 @@
+@import "../../assets/styles/setup/setup";
+
+//---------------------------Cart------------------------------
+
+.cart__main__container {
+  padding: 20px;
+  min-width: 900px;
+}
+
+.cart__header {
+  margin-bottom: 30px;
+}
+
+//--------------------------CartItems-------------------------
+
+.cart__items__main__container {
+  flex-basis: 50%;
+}
+
+.cart__items__suc__container {
+  height: 100%;
+  width: 100%;
+  outline: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 20px 16px 15px 16px;
+  border-radius: 10px;
+  height: fit-content;
+}
+.cart__items__items__container {
+  height: 300px;
+  overflow-y: scroll;
+  padding: 10px 10px;
+  margin-bottom: 13px;
+}
+.cart__items__price__labels__container {
+  margin-bottom: 10px;
+  font-weight: 400;
+  &.bold {
+    font-weight: 900;
+  }
+}
+
+// --------------------------------CartItem-----------------------------------
+
+.cart__item__container {
+  padding: 15px 0px;
+  &:not(:last-of-type) {
+    border-bottom: 1px dotted $moonstone_grey;
+  }
+}
+
+.cart__item__image__container {
+  width: 80px;
+  height: 80px;
+  outline: 1px solid $moonstone_grey;
+  padding: 3px;
+  img {
+    display: block;
+    object-fit: contain;
+    height: 100%;
+  }
+}
+
+.cart__item__header {
+  margin: 0;
+}
+
+.cart__item__quantity__container {
+  gap: 8px;
+}
+
+.cart__item__quantity__buttons__container {
+  gap: 5px;
+}
+
+.cart__item__button {
+  width: 25px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 25px !important;
+}
+
+.cart__item__sub__title {
+  text-transform: capitalize;
+  font-size: rem(10px);
+}
+
+.cart__item__new__price {
+  margin-right: 10px;
+}
+
+.cart__item__delete__button__icon {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+// --------------------------------CartForm-----------------------------------
+
+.cart__form__main__container {
+  flex-basis: 50%;
+}
+
+.cart__form__error__massage {
+  position: absolute;
+  width: fit-content;
+  bottom: -34px;
+  padding: 6px;
+  background-color: $petal_pink;
+  color: $white;
+  border-radius: 3px;
+  z-index: 5;
+  transition: 0.4s ease-in-out;
+  opacity: 0;
+  color: $mahogany_red;
+  &.active {
+    opacity: 1;
+  }
+  &::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid $petal_pink;
+    position: absolute;
+    top: -4px;
+    left: 10px;
+    z-index: 10;
+  }
+}
+
+.cart__form__input__with__error__container {
+  margin-bottom: 30px;
+  position: relative;
+  p {
+    text-transform: capitalize;
+  }
+
+  &.number {
+    .cart__form__error__massage {
+      bottom: -47px;
+    }
+  }
+}
+
+.cart__form__send__order__button {
+  text-transform: capitalize !important;
+  border-radius: 5px !important;
+  font-weight: 700 !important;
+  box-shadow: none !important;
+  background-color: $tranquil_turquoise !important;
+  color: $emerald_green !important;
+  height: 40px !important;
+}
+
+// ----------------------CartSuccuss---------------------------------
+
+.cart__succuss__main__container {
+  height: 400px;
+}
+
+.hourglass {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart__succuss__fab {
+  width: 100px !important;
+  height: 100px !important;
+  margin-bottom: 30px !important;
+  pointer-events: none !important;
+  &.blue__background__color {
+    background-color: rgb(21, 101, 192) !important;
+  }
+  &.green__background__color {
+    background-color: rgb(76, 175, 80) !important;
+  }
+}
+
+.cart__succuss__fab__icon {
+  width: 40% !important;
+  height: 40% !important;
+}
+
+.cart__succuss__header {
+  font-weight: 700;
+  font-size: rem(22px);
+}
+
+.cart__succuss__paragraph {
+  width: 500px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.cart__succuss__button {
+  text-transform: capitalize !important;
+  border-radius: 5px !important;
+  font-weight: 700 !important;
+  box-shadow: none !important;
+  background-color: $tranquil_turquoise !important;
+  color: $emerald_green !important;
+  height: 40px !important;
+}

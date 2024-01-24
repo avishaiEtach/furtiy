@@ -1,0 +1,124 @@
+@import "../../assets/styles/setup/setup";
+
+.product__card {
+  position: relative;
+  flex-direction: column;
+  border: 1px solid $black_smoke;
+  border-radius: 10px;
+  padding: 50px 30px 15px 30px;
+  overflow: hidden;
+  transition: 0.4s;
+  z-index: 10;
+  cursor: pointer;
+  &.minimize {
+    flex-direction: row;
+    gap: 20px;
+    // &:hover {
+    //   box-shadow: none;
+    // }
+  }
+}
+.product__card:hover {
+  box-shadow: 0px 15px 15px 0px $black_smoke;
+}
+.product__card__image__continuer {
+  width: 200px;
+  height: 200px;
+  img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+  }
+  &.minimize {
+    height: auto;
+    img {
+      object-fit: contain;
+    }
+  }
+}
+.product__card__info {
+  align-self: flex-start;
+  flex-direction: column;
+  & > * {
+    margin: 0;
+  }
+  p {
+    color: $silver_gray;
+    font-size: rem(14px);
+    text-transform: capitalize;
+  }
+  margin-bottom: 30px;
+  &.minimize {
+    margin-bottom: 0;
+  }
+}
+
+.product__card__price__continuer {
+  width: 100%;
+  .old__price {
+    color: $silver_gray;
+    text-decoration: line-through;
+    text-decoration-color: $silver_gray;
+    margin-top: 2px;
+  }
+  .new__price {
+    font-weight: 700;
+  }
+  &.minimize {
+    flex-direction: column;
+    width: fit-content;
+    gap: 10px;
+  }
+}
+
+.product__card__flag {
+  position: absolute;
+  padding: 10px 60px;
+  transform: rotateZ(320deg);
+  top: 10px;
+  left: -40px;
+  color: $white;
+  text-transform: capitalize;
+  &.hot {
+    background-color: $raspberry_sorbet;
+  }
+  &.new {
+    background-color: $jungle_green;
+  }
+  &.sale {
+    background-color: $sky_blue;
+  }
+}
+
+.product__card__like {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.product__card__favorite {
+  position: relative;
+  z-index: 200;
+  &.MuiCheckbox-colorPrimary {
+    color: $raspberry_sorbet !important;
+  }
+  .favorite__border {
+    color: $slate_gray !important;
+  }
+  .favorite {
+    color: $raspberry_sorbet !important;
+  }
+}
+
+.star__icon {
+  opacity: 0.9 !important;
+}
+
+.add__to__shopping__cart__button {
+  text-transform: capitalize !important;
+  border-radius: 5px !important;
+  font-weight: 700 !important;
+  box-shadow: none !important;
+  background-color: $tranquil_turquoise !important;
+  color: $emerald_green !important;
+}

@@ -1,0 +1,17 @@
+@import "../../assets/styles/setup/setup";
+
+.modal__main__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 400px;
+  background-color: $white;
+  box-shadow: 0px 11px 15px -7px $inky_veil, 0px 24px 38px 3px $subdued_shadow,
+    0px 9px 46px 8px $gentle_silhouette;
+  padding-top: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 24px;
+  border-radius: 10px;
+}

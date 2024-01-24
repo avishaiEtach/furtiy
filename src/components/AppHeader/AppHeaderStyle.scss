@@ -1,0 +1,104 @@
+@import "../../assets/styles/setup/setup";
+
+.app__header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 0 0 100vmax $white;
+  clip-path: inset(0 -100vmax);
+  background-color: $white;
+  padding-top: 20px;
+  .logo {
+    font-size: rem(32px);
+    font-weight: 700;
+  }
+  .divider {
+    height: rem(3px);
+    width: auto;
+    background-color: $pearl_white;
+    &.fullscreen {
+      position: absolute;
+      z-index: 10;
+      right: 0;
+      left: 0;
+    }
+    &.vertical {
+      height: auto;
+      width: rem(3px);
+      margin: rem(3px) rem(0px);
+    }
+  }
+
+  nav {
+    & > * {
+      color: $charcoal;
+      transition: 0.4s;
+      &:hover {
+        color: $emerald_green;
+        text-decoration: none;
+      }
+    }
+    .active {
+      color: $emerald_green;
+    }
+  }
+}
+
+.app__header__container {
+  margin-bottom: 0.6em;
+}
+
+.app__header__badge {
+  .MuiBadge-badge {
+    color: $white;
+    background-color: $emerald_green;
+    height: rem(15px);
+    min-width: rem(15px);
+    width: rem(15px);
+    font-size: rem(11px);
+  }
+}
+
+.nave__link__container {
+  padding: rem(20px) 0;
+}
+
+.app__header__user__account {
+  margin-top: 7px;
+  cursor: pointer;
+  transition: 0.4s;
+  &:hover {
+    opacity: 0.5;
+  }
+  a {
+    pointer-events: none;
+  }
+  .active {
+    color: $emerald_green;
+  }
+  &.user {
+    margin-top: 7px;
+  }
+}
+
+.user__label__circular__skeleton {
+  width: 25px !important;
+  height: 25px !important;
+}
+
+.user__label__text__skeleton {
+  font-size: 2rem;
+  width: 100px;
+}
+
+.app__header__wish__list__title {
+  margin-top: 4px;
+}
+
+.app__header__wishList__link {
+  cursor: pointer;
+  transition: 0.4s;
+  &:hover {
+    opacity: 0.5;
+  }
+}

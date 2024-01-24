@@ -1,0 +1,115 @@
+@import "../../assets/styles/setup/setup";
+
+.sign__up__main__container {
+  padding: 20px 0;
+  position: relative;
+}
+
+.sign__up__header {
+  align-self: center;
+  font-weight: bold;
+  font-size: rem(38px);
+  margin-bottom: 60px;
+}
+
+.sign__up__button {
+  text-transform: capitalize !important;
+  border-radius: 5px !important;
+  box-shadow: none !important;
+  height: 45px !important;
+  background-color: $emerald_green !important;
+  border: 1px solid $gentle_silhouette !important;
+  span {
+    color: $white !important;
+  }
+  &.Mui-disabled {
+    color: transparent !important;
+    border: 1px solid $gentle_silhouette !important;
+    .sign__up__button__text {
+      color: transparent !important;
+    }
+    &.button-disabled {
+      .sign__up__button__text {
+        color: $dark_transparency !important;
+      }
+    }
+  }
+}
+
+.sign__up__form__error__massage {
+  position: absolute;
+  width: fit-content;
+  bottom: -34px;
+  padding: 6px;
+  background-color: $petal_pink;
+  color: $white;
+  border-radius: 3px;
+  z-index: 5;
+  transition: 0.4s ease-in-out;
+  opacity: 0;
+  color: $mahogany_red;
+  &.active {
+    opacity: 1;
+  }
+  &::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid $petal_pink;
+    position: absolute;
+    top: -4px;
+    left: 10px;
+    z-index: 10;
+  }
+}
+
+.sign__up__details__select {
+  background-color: $white;
+  height: 2.8em !important;
+  flex-basis: 50% !important;
+  &.Mui-focused fieldset {
+    border: 2px solid $emerald_green !important;
+  }
+  .MuiInputLabel-root {
+    color: $emerald_green !important;
+  }
+}
+
+.sign__up__date__container {
+  position: relative;
+  flex-basis: 50%;
+  .Mui-error {
+    fieldset {
+      border: 1px solid $gentle_black_veil !important;
+    }
+    &.Mui-focused fieldset {
+      border: 2px solid $emerald_green !important;
+    }
+  }
+}
+
+.sign__up__date__input__mui {
+  background-color: $white;
+  input {
+    height: 0.8em;
+  }
+  &.withBorder {
+    fieldset {
+      border: 1px solid $emerald_green !important;
+    }
+  }
+  .Mui-focused fieldset {
+    border: 2px solid $emerald_green !important;
+  }
+  .MuiInputLabel-root {
+    color: $emerald_green !important;
+  }
+}
+
+.sign__up__placeholder__container {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
